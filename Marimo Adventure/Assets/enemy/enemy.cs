@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class enemy : MonoBehaviour
 {
-    public GameObject healthbar;
     private Transform target;
+    [SerializeField] private float damage;
     [SerializeField] private float maxhp;
     [SerializeField] private float _speed = 2f;
+    [SerializeField] private float basespeed;
+    [SerializeField] private float maxspeed;
     [SerializeField] private float _leftBound;
     [SerializeField] private float _rightBound;
     [SerializeField] private float scalex;
@@ -22,11 +24,12 @@ public class enemy : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
+    // Update is called once per frame
     void Update()
     {
-        if (_isMoving && playerIsClose == false)
+        if (_isMoving && !playerIsClose)
         {
-            _speed = 2;
+            _speed = basespeed;
             danger.SetActive(false);
             var curPosition = transform.localPosition;
             if (curPosition.x > _rightBound)
@@ -51,7 +54,7 @@ public class enemy : MonoBehaviour
         if (playerIsClose)
         {
             danger.SetActive(true);
-            _speed = 4f;
+            _speed = maxspeed;
             transform.position = Vector2.MoveTowards(transform.position, target.position, _speed * Time.deltaTime);
         }
     }
@@ -65,7 +68,7 @@ public class enemy : MonoBehaviour
         if (other.gameObject.CompareTag("Arrow"))
         {
             Destroy(other.gameObject);
-            maxhp -= 50f;
+            maxhp -= damage;
             if (maxhp <= 0)
             {
                 Destroy(gameObject);
@@ -78,15 +81,5 @@ public class enemy : MonoBehaviour
         {
             playerIsClose = false;
         }
-        if (other.gameObject.CompareTag("Arrow"))
-        {
-            Destroy(other.gameObject);
-            maxhp -= 50f;
-            if (maxhp <= 0)
-            {
-                Destroy(gameObject);
-            }
-        }
     }
-
 }
