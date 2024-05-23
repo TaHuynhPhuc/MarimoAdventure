@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class enemy : MonoBehaviour
 {
+    public GameObject healthbar;
     private Transform target;
-    private float maxhp = 100;
+    [SerializeField] private float maxhp;
     [SerializeField] private float _speed = 2f;
     [SerializeField] private float _leftBound;
     [SerializeField] private float _rightBound;
@@ -18,11 +19,9 @@ public class enemy : MonoBehaviour
     [SerializeField] public GameObject danger;
     void Start()
     {
-        maxhp = 100;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (_isMoving && playerIsClose == false)
@@ -63,17 +62,15 @@ public class enemy : MonoBehaviour
         {
             playerIsClose = true;
         }
-        //if (other.gameObject.CompareTag("Bullet"))
-        //{
-        //    Destroy(other.gameObject);
-        //    maxhp -= 50f;
-        //    heathbar.value = maxhp;
-        //    if (maxhp <= 0)
-        //    {
-        //        danger.SetActive(false);
-        //        Destroy(gameObject);
-        //    }
-        //}
+        if (other.gameObject.CompareTag("Arrow"))
+        {
+            Destroy(other.gameObject);
+            maxhp -= 50f;
+            if (maxhp <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -81,17 +78,15 @@ public class enemy : MonoBehaviour
         {
             playerIsClose = false;
         }
-        //if (other.gameObject.CompareTag("Bullet"))
-        //{
-        //    Destroy(other.gameObject);
-        //    maxhp -= 50f;
-        //    heathbar.value = maxhp;
-        //    if (maxhp <= 0)
-        //    {
-        //        danger.SetActive(false);
-        //        Destroy(gameObject);
-        //    }
-        //}
+        if (other.gameObject.CompareTag("Arrow"))
+        {
+            Destroy(other.gameObject);
+            maxhp -= 50f;
+            if (maxhp <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 
 }
