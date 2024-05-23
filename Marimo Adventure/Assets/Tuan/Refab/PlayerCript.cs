@@ -7,6 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject arrowObj;
     Vector2 moveInput;
     Rigidbody2D rig;
     [SerializeField] float speed = 10f;
@@ -68,11 +69,11 @@ public class PlayerController : MonoBehaviour
         }*/
     }
 
-    /*public void OnFire(InputAction.CallbackContext context)
+    public void OnFire(InputAction.CallbackContext context)
     {
         //Quaternion arrowRotation = playerMovement.isFacingRight ? Quaternion.indentity : Quaternion.Euler(0, 180f, 0); 
-        Instantiate(arrowObj, bowPosition.position, Quaternion.identity );
-    }*/
+        Instantiate(arrowObj, transform.position, Quaternion.identity );
+    }
 
     void Flip()
     {

@@ -1,5 +1,5 @@
 {
-    "name": "PS38831",
+    "name": "PS42479",
     "maps": [
         {
             "name": "Player",
@@ -29,7 +29,7 @@
                     "id": "add9ecf6-0edc-48ae-9406-9e2d62af7882",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "initialStateCheck": false
                 },
                 {
