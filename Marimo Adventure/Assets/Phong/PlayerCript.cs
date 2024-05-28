@@ -84,10 +84,10 @@ public class PlayerController : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        Debug.Log("Can Jump test 1");
+        
         if (isAlive && feet.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
-            Debug.Log("Can Jump test 2");
+            
             if (value.isPressed)
             {
                 rig.velocity += new Vector2(0f, jumpspeed);
@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
         rig.gravityScale = 0;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+   /* private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("topenemy"))
         {
@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
             Die();
         }
 
-    }
+    }*/
 
     void Die()
     {

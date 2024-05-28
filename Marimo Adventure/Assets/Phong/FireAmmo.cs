@@ -6,15 +6,17 @@ public class FireAmmo : MonoBehaviour
 {
     public float speed = 10f; // Tốc độ của mũi tên
     private Rigidbody2D rb;
+    
     void Start()
     {
-        rb.velocity = transform.right * speed;
         rb = GetComponent<Rigidbody2D>();
+        rb.velocity = transform.right * speed;
         Destroy(gameObject, 5f);
-    }
-    void OnCollisionEnter2D(Collision2D collision)
+         }
+        
+    
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Nếu mũi tên chạm đất
         if (collision.gameObject.CompareTag("Ground"))
         {
             Destroy(gameObject);
@@ -25,11 +27,6 @@ public class FireAmmo : MonoBehaviour
         {
             Destroy(collision.gameObject); // Tiêu diệt kẻ thù
             Destroy(gameObject); // Tiêu diệt mũi tên
-        }
-        // Update is called once per frame
-        void Update()
-        {
-
         }
     }
 }
