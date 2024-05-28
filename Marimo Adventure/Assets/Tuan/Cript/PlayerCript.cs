@@ -54,22 +54,10 @@ public class PlayerController : MonoBehaviour
         else
             anim.SetBool("isJumping", true);
 
-        /*if (havemove && feet.IsTouchingLayers(LayerMask.GetMask("Ground")))
-        {
-            //huong cua player
-            int huong = (int)transform.localScale.x;
-            //lay rotate cua dust
-            Quaternion rotatedust = dust.transform.localRotation;
-            if (huong == 1)
-                rotatedust.y = 180;
-            else if (huong == -1)
-                rotatedust.y = 0;
-            dust.transform.localRotation = rotatedust;//cap nhat
-            dust.Play();
-        }*/
+        
     }
 
-    public void OnFire(InputAction.CallbackContext context)
+    public void OnFire(InputValue value)
     {
         //Quaternion arrowRotation = playerMovement.isFacingRight ? Quaternion.indentity : Quaternion.Euler(0, 180f, 0); 
         Instantiate(arrowObj, transform.position, Quaternion.identity );
@@ -96,19 +84,15 @@ public class PlayerController : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        if (isAlive == false)
-        {
-            return;
-        }
-        if (!feet.IsTouchingLayers(LayerMask.GetMask("Ground")))
-        {
-            return;
-        }
-
-        if (value.isPressed)
-        {
-            rig.velocity += new Vector2(0f, jumpspeed);
-        }
+        Debug.Log("Can Jump test 1");
+        /*if (isAlive && feet.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {*/
+            Debug.Log("Can Jump test 2");
+            if (value.isPressed)
+            {
+                rig.velocity += new Vector2(0f, jumpspeed);
+            }
+        //}
     }
 
     void Climlander()
