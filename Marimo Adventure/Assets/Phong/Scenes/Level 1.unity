@@ -101948,6 +101948,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6922730403369474270, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
   m_PrefabInstance: {fileID: 1449895528}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1182069105 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8021379151915771036, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
+  m_PrefabInstance: {fileID: 1449895528}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7afefd190b102a9418ddf0c13120cbf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1449895528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101962,11 +101973,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3410671233774750963, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3998884272107089491, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6922730403369474270, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
       propertyPath: m_LocalPosition.x
@@ -102008,9 +102019,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8021379151915771036, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
+      propertyPath: arrowObj
+      value: 
+      objectReference: {fileID: 4809627330344564379, guid: 99ada7388b2fa604189056aa04397b80, type: 3}
+    - target: {fileID: 8130348042050540563, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
+      propertyPath: m_NotificationBehavior
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8130348042050540563, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
       propertyPath: m_NeverAutoSwitchControlSchemes
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130348042050540563, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130348042050540563, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130348042050540563, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130348042050540563, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1182069105}
+    - target: {fileID: 8130348042050540563, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130348042050540563, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130348042050540563, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130348042050540563, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
