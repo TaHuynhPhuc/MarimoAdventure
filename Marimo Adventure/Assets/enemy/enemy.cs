@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class enemy : MonoBehaviour
 {
     private Transform target;
-    private float maxhp = 100;
+    private float maxhp = 100;  
     [SerializeField] private float _speed = 2f;
     [SerializeField] private float _leftBound;
     [SerializeField] private float _rightBound;

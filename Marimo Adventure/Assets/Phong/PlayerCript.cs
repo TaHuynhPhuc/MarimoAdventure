@@ -7,7 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject arrowObj;
+    
     Vector2 moveInput;
     Rigidbody2D rig;
     [SerializeField] float speed = 10f;
@@ -57,11 +57,11 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    public void OnFire(InputValue value)
+    /*public void OnFire(InputValue value)
     {
         //Quaternion arrowRotation = playerMovement.isFacingRight ? Quaternion.indentity : Quaternion.Euler(0, 180f, 0); 
         Instantiate(arrowObj, transform.position, Quaternion.identity );
-    }
+    }*/
 
     void Flip()
     {
@@ -84,15 +84,15 @@ public class PlayerController : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        Debug.Log("Can Jump test 1");
-        /*if (isAlive && feet.IsTouchingLayers(LayerMask.GetMask("Ground")))
-        {*/
-            Debug.Log("Can Jump test 2");
+        
+        if (isAlive && feet.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            
             if (value.isPressed)
             {
                 rig.velocity += new Vector2(0f, jumpspeed);
             }
-        //}
+        }
     }
 
     void Climlander()
@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
         rig.gravityScale = 0;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+   /* private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("topenemy"))
         {
@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
             Die();
         }
 
-    }
+    }*/
 
     void Die()
     {
