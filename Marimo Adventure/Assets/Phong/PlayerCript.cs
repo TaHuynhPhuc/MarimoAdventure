@@ -7,7 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerController : MonoBehaviour
 {
-    
+
     Vector2 moveInput;
     Rigidbody2D rig;
     [SerializeField] float speed = 10f;
@@ -18,9 +18,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float climbspeed = 10f;
     float startgravityscale;
     bool isAlive = true;
-    //public GameOverScreen GameOverScreen;
-    //int maxPlatform = 0;
     public ParticleSystem dust;
+
 
     void Start()
     {
@@ -36,6 +35,7 @@ public class PlayerController : MonoBehaviour
     {
         Run();
         Flip();
+        Climlander();
         Climlander();
     }
 
@@ -54,14 +54,8 @@ public class PlayerController : MonoBehaviour
         else
             anim.SetBool("isJumping", true);
 
-        
-    }
 
-    /*public void OnFire(InputValue value)
-    {
-        //Quaternion arrowRotation = playerMovement.isFacingRight ? Quaternion.indentity : Quaternion.Euler(0, 180f, 0); 
-        Instantiate(arrowObj, transform.position, Quaternion.identity );
-    }*/
+    }
 
     void Flip()
     {
@@ -84,10 +78,10 @@ public class PlayerController : MonoBehaviour
 
     void OnJump(InputValue value)
     {
-        
+
         if (isAlive && feet.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
-            
+
             if (value.isPressed)
             {
                 rig.velocity += new Vector2(0f, jumpspeed);
@@ -97,44 +91,37 @@ public class PlayerController : MonoBehaviour
 
     void Climlander()
     {
-        if (isAlive == false)
+        if (!isAlive)
         {
             return;
         }
-        if (!feet.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+
+        if (feet.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        {
+            rig.gravityScale = 0;
+            float verticalInput = moveInput.y;
+            rig.velocity = new Vector2(rig.velocity.x, verticalInput * climbspeed);
+
+
+            bool isClimbing = Mathf.Abs(rig.velocity.y) > Mathf.Epsilon;
+            anim.SetBool("isClimbing", isClimbing);
+        }
+        else
         {
             rig.gravityScale = startgravityscale;
-            return;
+            anim.SetBool("isClimbing", false);
         }
-
-        rig.velocity = new Vector2(rig.velocity.x, moveInput.y * climbspeed);
-        rig.gravityScale = 0;
     }
 
-   /* private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("topenemy"))
-        {
-            string name = collision.attachedRigidbody.name;
-            Destroy(GameObject.Find(name));
-            FindObjectOfType<GameSession>().AddScore(10);
-        }
-        else if (collision.gameObject.CompareTag("bodyenemy"))
-        {
-            Die();
-        }
-
-    }*/
+    
+     
 
     void Die()
     {
         isAlive = false;
         anim.SetTrigger("Die");
         FindObjectOfType<GameSession>().PlayerDeath();
-        //GameOver();
+        
     }
-    /*public void GameOver()
-    {
-        GameOverScreen.Setup(maxPlatform);
-    }*/
+    
 }
