@@ -28690,6 +28690,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1912253250766484195, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
+      propertyPath: cooldownTime
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3410671233774750963, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
       propertyPath: m_Name
       value: Player
