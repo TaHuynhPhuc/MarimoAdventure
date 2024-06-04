@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8449237855345428821}
   m_Layer: 0
   m_Name: trigger
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,9 +234,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7983573038919262017}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.603004, y: -3.95323, z: 0}
-  m_LocalScale: {x: 5.8406024, y: 5.8406024, z: 5.8406024}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.83, y: -2.54, z: -0.1050595}
+  m_LocalScale: {x: 3.2658095, y: 3.2658095, z: 3.2658095}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8431396930909355043}
@@ -383,7 +383,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.56298405, y: 0.060416102}
+  m_Offset: {x: -0.30468178, y: 0.060416102}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -394,7 +394,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3759149, y: 0.3208322}
+  m_Size: {x: 0.8593104, y: 0.3208322}
   m_EdgeRadius: 0
 --- !u!50 &4889011169715097939
 Rigidbody2D:
@@ -435,14 +435,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5431e00a4b662e241a384b6f1bd548d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  maxhp: 50
+  damage: 1
+  maxhp: 3
   _speed: 2
   basespeed: 2
   maxspeed: 4
   _leftBound: 2
   _rightBound: 5
-  scalex: 5.840602
-  scaley: -5.840602
+  scalex: 3.26581
+  scaley: -3.26581
   playerIsClose: 0
   danger: {fileID: 4579197563202068167}

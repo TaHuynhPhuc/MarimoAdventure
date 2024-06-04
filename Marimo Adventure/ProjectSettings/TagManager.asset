@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Enemy
   - Ladder
+  - Arrow
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - Ground
   - Player
-  - 
+  - Climbing
   - 
   - 
   - 
