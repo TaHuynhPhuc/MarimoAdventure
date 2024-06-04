@@ -19,7 +19,8 @@ public class PlayerController : MonoBehaviour
     float startgravityscale;
     bool isAlive = true;
     public ParticleSystem dust;
-
+    int heath = 1;
+    int damage = 1;
 
     void Start()
     {
@@ -113,7 +114,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    
+    public void TakeDamage(int damage)
+    {
+        heath -= damage;
+        if (heath < 1)
+        {
+            Die();
+        }
+    }
      
 
     void Die()
@@ -121,7 +129,7 @@ public class PlayerController : MonoBehaviour
         isAlive = false;
         anim.SetTrigger("Die");
         FindObjectOfType<GameSession>().PlayerDeath();
-        
+        Debug.Log("Ban da chet ");
     }
     
 }
