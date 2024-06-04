@@ -42098,8 +42098,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  topY: 2.5
-  bottomY: -1.1
+  xPoint: 5
+  yPoint: -5
+  verticalMode: 1
 --- !u!251 &1190675606
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -42540,21 +42541,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1912253250766484195, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
-      propertyPath: cooldownTime
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3410671233774750963, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4217234637716266902, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.223
-      objectReference: {fileID: 0}
-    - target: {fileID: 4217234637716266902, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.072
       objectReference: {fileID: 0}
     - target: {fileID: 6922730403369474270, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42595,18 +42584,6 @@ PrefabInstance:
     - target: {fileID: 6922730403369474270, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8021379151915771036, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
-      propertyPath: jumpspeed
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 8021379151915771036, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
-      propertyPath: climbspeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8906326352331963895, guid: 8998898c2952f1b47895c4c9ce9c1556, type: 3}
-      propertyPath: m_Material
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43156,8 +43133,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  topY: 2.1
-  bottomY: -1.1
+  xPoint: 5
+  yPoint: -5
+  verticalMode: 1
 --- !u!1001 &2069677179
 PrefabInstance:
   m_ObjectHideFlags: 0
