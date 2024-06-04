@@ -8,6 +8,28 @@ public class Boss : MonoBehaviour
     private int damage = 1;
     private float speed = 3;
 
+    public Transform player;
+
+    public bool isFipped = false;
+    
+    public void LookforPlayer()
+    {
+        Vector3 fipped = transform.localScale;
+        fipped.z *= -1f;
+        
+        if(transform.position.x > player.position.x && isFipped)
+        {
+            transform.localScale = fipped;
+            transform.Rotate(0f, 180f, 0f);
+            isFipped = false;
+        }else if (transform.position.x < player.position.x && !isFipped)
+        {
+            transform.localScale = fipped;
+            transform.Rotate(0f, 180f, 0f);
+            isFipped = true;
+        }
+    }
+
     public enum EnemyState
     {
         attack,
