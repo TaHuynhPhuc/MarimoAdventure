@@ -42098,8 +42098,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  xPoint: 5
-  yPoint: -5
+  xPoint: 2.5
+  yPoint: -1.1
   verticalMode: 1
 --- !u!251 &1190675606
 PlatformEffector2D:
@@ -43133,8 +43133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  xPoint: 5
-  yPoint: -5
+  xPoint: 2.1
+  yPoint: -1.1
   verticalMode: 1
 --- !u!1001 &2069677179
 PrefabInstance:

@@ -7,36 +7,54 @@ public class MovingBlock : MonoBehaviour
     public float yPoint = -5.0f; // Tọa độ Y của điểm dưới cùng
     public bool verticalMode;
 
-    private Vector3 direction = Vector3.up; // Hướng di chuyển ban đầu
+    private Vector3 directionVer = Vector3.up; // Hướng di chuyển ban đầu
+    private Vector3 directionHor = Vector3.right;
 
     void Update()
     {
-        // Di chuyển block theo hướng hiện tại với tốc độ cố định
-        transform.Translate(direction * speed * Time.deltaTime);
-
         if (verticalMode)
         {
+            // Di chuyển block theo hướng hiện tại với tốc độ cố định
+            transform.Translate(directionVer * speed * Time.deltaTime);
             // Kiểm tra nếu block vượt quá điểm trên cùng
             if (transform.position.y >= xPoint)
             {
-                direction = Vector3.down; // Đổi hướng di chuyển xuống
+                directionVer = Vector3.down; // Đổi hướng di chuyển xuống
             }
             // Kiểm tra nếu block vượt quá điểm dưới cùng
             else if (transform.position.y <= yPoint)
             {
-                direction = Vector3.up; // Đổi hướng di chuyển lên
+                directionVer = Vector3.up; // Đổi hướng di chuyển lên
             }
         }
         else
         {
+            // Di chuyển block theo hướng hiện tại với tốc độ cố định
+            transform.Translate(directionHor * speed * Time.deltaTime);
             if (transform.position.x >= xPoint)
             {
-                direction = Vector3.left;
+                directionHor = Vector3.left;
             }
             else if (transform.position.x <= yPoint)
             {
-                direction = Vector3.right;
+                directionHor = Vector3.right;
             }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!verticalMode && collision.gameObject.CompareTag("Player"))
+        {
+            collision.transform.SetParent(transform);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (!verticalMode && collision.gameObject.CompareTag("Player"))
+        {
+            collision.transform.SetParent(null);
         }
     }
 }
