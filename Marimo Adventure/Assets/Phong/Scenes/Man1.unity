@@ -503,7 +503,7 @@ Transform:
   m_GameObject: {fileID: 223966543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3000727, y: -1.2150624, z: -10}
+  m_LocalPosition: {x: 21.165941, y: 3.4256234, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -614,8 +614,8 @@ PolygonCollider2D:
       - {x: 1.5642929, y: -8.283756}
       - {x: 6.125938, y: -8.750288}
       - {x: 29.716291, y: -8.753096}
-      - {x: 30.09947, y: 34.22825}
-      - {x: 30.118929, y: 38.161633}
+      - {x: 31.729782, y: 33.942944}
+      - {x: 31.667727, y: 38.080116}
       - {x: 34.8973, y: 38.89935}
       - {x: 39.84536, y: 42.033783}
       - {x: 46.861893, y: 41.98411}
@@ -29237,7 +29237,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2130881207}
-  - component: {fileID: 2130881208}
   m_Layer: 8
   m_Name: Ladders
   m_TagString: Untagged
