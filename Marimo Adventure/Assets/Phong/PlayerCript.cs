@@ -37,7 +37,6 @@ public class PlayerController : MonoBehaviour
         Run();
         Flip();
         Climlander();
-        Climlander();
     }
 
     void Run()
@@ -99,6 +98,7 @@ public class PlayerController : MonoBehaviour
 
         if (feet.IsTouchingLayers(LayerMask.GetMask("Climbing")))
         {
+            Debug.Log("co the leo thang");
             rig.gravityScale = 0;
             float verticalInput = moveInput.y;
             rig.velocity = new Vector2(rig.velocity.x, verticalInput * climbspeed);
@@ -109,6 +109,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            Debug.Log("ko the leo thang");
             rig.gravityScale = startgravityscale;
             anim.SetBool("isClimbing", false);
         }
