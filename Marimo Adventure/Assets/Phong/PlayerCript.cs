@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
     void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
-        Debug.Log(moveInput);
+        
     }
 
     void OnJump(InputValue value)
@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
 
         if (feet.IsTouchingLayers(LayerMask.GetMask("Climbing")))
         {
-            Debug.Log("co the leo thang");
+           
             rig.gravityScale = 0;
             float verticalInput = moveInput.y;
             rig.velocity = new Vector2(rig.velocity.x, verticalInput * climbspeed);
@@ -109,7 +109,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            Debug.Log("ko the leo thang");
+            
             rig.gravityScale = startgravityscale;
             anim.SetBool("isClimbing", false);
         }
@@ -123,14 +123,22 @@ public class PlayerController : MonoBehaviour
             Die();
         }
     }
-     
+
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Spike") || other.gameObject.CompareTag("Enemy"))
+        {
+            Die();
+        }
+    }
 
     void Die()
     {
-        isAlive = false;
-        anim.SetTrigger("Die");
-        FindObjectOfType<GameSession>().PlayerDeath();
-        Debug.Log("Ban da chet ");
+        // Thực hiện các thao tác khi nhân vật chết, ví dụ:
+        // Hiển thị màn hình game over, chơi âm thanh chết, v.v.
+        Debug.Log("Player died!");
+        // Đặt trạng thái game over, tải lại level, v.v.
     }
-    
+
 }
