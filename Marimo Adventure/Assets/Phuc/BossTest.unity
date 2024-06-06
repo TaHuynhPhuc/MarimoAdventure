@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 2026613513}
   - component: {fileID: 2026613512}
   - component: {fileID: 2026613515}
+  - component: {fileID: 2026613516}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Player
@@ -457,6 +458,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 6029415077897074041, guid: 7486164adb6a62c4ab234be231465103, type: 3}
   bulletPos: {fileID: 1992908701}
+--- !u!114 &2026613516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026613508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f76225405cd8384ba5a2eb4bf97555b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  force: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
