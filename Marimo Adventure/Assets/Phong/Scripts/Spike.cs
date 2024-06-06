@@ -11,7 +11,6 @@ public class Spike : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Va cham");
             if(collision.gameObject.GetComponent<PlayerController>() != null)
             collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
             collision.gameObject.transform.position = spawnPoint.transform.position;
