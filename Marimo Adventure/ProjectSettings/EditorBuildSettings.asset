@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Phong/Scenes/Man1.unity
+    path: Assets/Scenes/Main Menu Screen.unity
+    guid: b573fd7b7c1bcf74e95a58d01e1bfdf5
+  - enabled: 1
+    path: Assets/Scenes/Man1.unity
     guid: a4437a59b8d55804daa8d75107a02d3d
   - enabled: 1
-    path: Assets/Phong/Scenes/Man2.unity
+    path: Assets/Scenes/Man2.unity
     guid: 3168bf53c431ff947b05fe5826a9ae4c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6cb40cdd9e4dee34d8ec510a08a50caa, type: 2}
