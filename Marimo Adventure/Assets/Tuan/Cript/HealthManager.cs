@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Image health1;
+    public Image health2;
+    public Image health3;
+    private PlayerController player;
+
+    private void Start()
     {
-        
+        player = GameObject.FindAnyObjectByType<PlayerController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if(player.heath == 2)
+        {
+            health3.color = Color.black;
+        }else if (player.heath == 1)
+        {
+            health2.color = Color.black;
+        }else if (player.heath <= 0)
+        {
+            health1.color = Color.black;
+        }
     }
 }
