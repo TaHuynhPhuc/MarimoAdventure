@@ -7,7 +7,7 @@ public class enemy : MonoBehaviour
 {
     public AudioSource source;
     private Transform target;
-    [SerializeField] private float damage;
+    [SerializeField] private int damage;
     [SerializeField] private float maxhp;
     [SerializeField] private float _speed = 2f;
     [SerializeField] private float basespeed;
@@ -87,6 +87,11 @@ public class enemy : MonoBehaviour
         {
             playerIsClose = false;
         }
+    }
+    private void OnTriggerEnter2D(Collider collison)
+    {
+        if(collison.gameObject.GetComponent<PlayerController>() != null)
+        collison.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
     }
     IEnumerator wait()
     {
