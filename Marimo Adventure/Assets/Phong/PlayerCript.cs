@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     float startgravityscale;
     bool isAlive = true;
     public ParticleSystem dust;
-    int heath = 3;
+    public int heath = 3;
     int damage = 1;
 
     void Start()
