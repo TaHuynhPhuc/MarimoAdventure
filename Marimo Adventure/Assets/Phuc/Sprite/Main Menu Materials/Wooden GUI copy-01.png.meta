@@ -1,0 +1,642 @@
+fileFormatVersion: 2
+guid: 401fd25b8f3f67e48be878349457eb70
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_0
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1698
+        width: 434
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c617a4d843f43454d8e9855aee86a335
+      internalID: -336244337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_1
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1698
+        width: 436
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2030cb942e129f240a2d512a96091264
+      internalID: 1215799217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1551
+        width: 123
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6480db52bb7bd7a47b980036dcd195c6
+      internalID: -2071936509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_3
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1551
+        width: 123
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a83b1a15a7199240b2180455b6d3c61
+      internalID: -631344484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_4
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1551
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cf6808f4217cb4e8ae05f3bbb970d7
+      internalID: -117694521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_5
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1551
+        width: 123
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2198edcc7a3f6364290a32fa2e31c17e
+      internalID: 1158502621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_6
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1551
+        width: 123
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1211f1919f7b2114e99023c6d9892e83
+      internalID: -1141811953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_7
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 1553
+        width: 679
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41db02bf9ed7c644b98c58271d64f2c
+      internalID: -1756123232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_8
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1408
+        width: 123
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a382266979fb43441ac34b3b788908d1
+      internalID: -417800569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_9
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1408
+        width: 123
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c12e81085823d4f8e8ac2a55ee98ec
+      internalID: -1856653564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_10
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1408
+        width: 122
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829b086d493a5454586ee41c3c863f5d
+      internalID: -1746492138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_11
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1408
+        width: 123
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2107ab74c59ccad4c8e0d2edefa61e5b
+      internalID: -2089259788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_12
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1408
+        width: 123
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcf6ea78d7cf9447871ea77a03dc96e
+      internalID: -359232311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_13
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 1401
+        width: 679
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a536a1e2ff2aa4ca186a5844606262
+      internalID: 722968384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_14
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1262
+        width: 123
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f87ed825a02db47a2cfb8ad3ef1ec2
+      internalID: -1211980754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_15
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1262
+        width: 123
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8e3d74322e34e4390eae68719c2bd0
+      internalID: 1412517101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_16
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1262
+        width: 122
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c434c5e46086234eb5609fcf3cc7f03
+      internalID: 1906139052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_17
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1262
+        width: 123
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b061245ccc2c6148bb5b8465502401c
+      internalID: -657731630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_18
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1262
+        width: 123
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1899af55f72ce894f878b1e5e03adc9e
+      internalID: 1386261519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_19
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 1248
+        width: 679
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bd52e8f2b184b4cbe88d83e5925b51
+      internalID: 698749685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_20
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1072
+        width: 247
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bf55966fd67af4096a242583fee748
+      internalID: 703675991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_21
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 1072
+        width: 249
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba35cb861a9536409d01a8070c72e45
+      internalID: 528712988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_22
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 50
+        width: 1193
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5b8e8ead5c55b4dbdefda8e36d8a49
+      internalID: 1523710163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wooden GUI copy-01_23
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 50
+        width: 1193
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c56c290c97b5ee41ab011d4e41c4d80
+      internalID: 940284077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Wooden GUI copy-01_0: -336244337
+      Wooden GUI copy-01_1: 1215799217
+      Wooden GUI copy-01_10: -1746492138
+      Wooden GUI copy-01_11: -2089259788
+      Wooden GUI copy-01_12: -359232311
+      Wooden GUI copy-01_13: 722968384
+      Wooden GUI copy-01_14: -1211980754
+      Wooden GUI copy-01_15: 1412517101
+      Wooden GUI copy-01_16: 1906139052
+      Wooden GUI copy-01_17: -657731630
+      Wooden GUI copy-01_18: 1386261519
+      Wooden GUI copy-01_19: 698749685
+      Wooden GUI copy-01_2: -2071936509
+      Wooden GUI copy-01_20: 703675991
+      Wooden GUI copy-01_21: 528712988
+      Wooden GUI copy-01_22: 1523710163
+      Wooden GUI copy-01_23: 940284077
+      Wooden GUI copy-01_3: -631344484
+      Wooden GUI copy-01_4: -117694521
+      Wooden GUI copy-01_5: 1158502621
+      Wooden GUI copy-01_6: -1141811953
+      Wooden GUI copy-01_7: -1756123232
+      Wooden GUI copy-01_8: -417800569
+      Wooden GUI copy-01_9: -1856653564
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
