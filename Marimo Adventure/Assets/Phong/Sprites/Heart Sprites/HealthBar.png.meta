@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 886aafcbe6baaff47b9af7e93cdd80c2
+guid: 79d53bc9ac47d864ca74b8e2687a10e8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -81,19 +81,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -107,7 +94,33 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Server
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPA_Enemy_Right_0
+      name: HealthBar_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 7
-        width: 24
-        height: 20
+        x: 5
+        y: 11
+        width: 112
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4712af3717daec24aa47292628de8ed3
-      internalID: 1610684541
+      spriteID: ba61cd4b1295cc647b93e6f47ffc20aa
+      internalID: 1612223610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Enemy_Right_1
+      name: HealthBar_1
       rect:
         serializedVersion: 2
-        x: 53
-        y: 7
-        width: 24
-        height: 18
+        x: 127
+        y: 11
+        width: 113
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a04103e126502ee4e80caf119a201a7b
-      internalID: 1163875519
+      spriteID: adc40810853ac0b4aa1b260a6ad80488
+      internalID: -916402450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Enemy_Right_2
+      name: HealthBar_2
       rect:
         serializedVersion: 2
-        x: 91
-        y: 7
-        width: 24
-        height: 16
+        x: 250
+        y: 11
+        width: 112
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a742d0c11a462a40839e5d953417648
-      internalID: -170020923
+      spriteID: e06ab3105ac0df346a835c9d8112cd70
+      internalID: -881124091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Enemy_Right_3
+      name: HealthBar_3
       rect:
         serializedVersion: 2
-        x: 129
-        y: 9
-        width: 26
-        height: 24
+        x: 372
+        y: 11
+        width: 113
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0042bfa2a34c85f4690d30076acf862c
-      internalID: 1503018162
+      spriteID: ba56fdda2813ff24391a0c49318ed969
+      internalID: -1635550207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Enemy_Right_4
+      name: HealthBar_4
       rect:
         serializedVersion: 2
-        x: 167
-        y: 13
-        width: 26
-        height: 22
+        x: 495
+        y: 11
+        width: 112
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 747f73842bcc3ce4ebec938427136ade
-      internalID: -861823139
+      spriteID: d6f1f3a61c57e564c8e9aacc46ecf539
+      internalID: 665493808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SPA_Enemy_Right_5
+      name: HealthBar_5
       rect:
         serializedVersion: 2
-        x: 203
-        y: 7
-        width: 24
-        height: 24
+        x: 617
+        y: 11
+        width: 113
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,8 +255,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c70311885609d64f98bbec1a658a0b7
-      internalID: -563177301
+      spriteID: 70f2fb2b2367aef4da84418dd9a71642
+      internalID: 1757116933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar_6
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 11
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87546e3138b233446af529808a6ac2e6
+      internalID: 1202533261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar_7
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 11
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3048b498901e29641a043b2bb559d790
+      internalID: 1416329168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar_8
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 11
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5242e128db03ea441abdf6e495bee74b
+      internalID: -1762795280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar_9
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 11
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fa300fd177c4b4cb5512af875dc7b4
+      internalID: -1497147252
       vertices: []
       indices: 
       edges: []
@@ -259,12 +356,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPA_Enemy_Right_0: 1610684541
-      SPA_Enemy_Right_1: 1163875519
-      SPA_Enemy_Right_2: -170020923
-      SPA_Enemy_Right_3: 1503018162
-      SPA_Enemy_Right_4: -861823139
-      SPA_Enemy_Right_5: -563177301
+      HealthBar_0: 1612223610
+      HealthBar_1: -916402450
+      HealthBar_2: -881124091
+      HealthBar_3: -1635550207
+      HealthBar_4: 665493808
+      HealthBar_5: 1757116933
+      HealthBar_6: 1202533261
+      HealthBar_7: 1416329168
+      HealthBar_8: -1762795280
+      HealthBar_9: -1497147252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

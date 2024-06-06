@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: -7988348464328829026}
   m_Layer: 0
   m_Name: "qu\xE1i th\u01B0\u1EDDng"
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,7 +234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7983573038919262017}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.83, y: -2.54, z: -0.1050595}
   m_LocalScale: {x: 3.2658095, y: 3.2658095, z: 3.2658095}
   m_ConstrainProportionsScale: 0
@@ -305,7 +305,7 @@ Animator:
   m_GameObject: {fileID: 7983573038919262017}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 72d26831d0d3521469e3e48ce6608fc2, type: 2}
+  m_Controller: {fileID: 9100000, guid: d08a1767a140b63458db09dc996f4d71, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -348,9 +348,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0047524497, y: -0.0017711368}
-  m_Size: {x: 0.23049515, y: 0.23049515}
-  m_Direction: 0
+  m_Offset: {x: -0.0011669475, y: 0.009675553}
+  m_Size: {x: 0.24488816, y: 0.20076902}
+  m_Direction: 1
 --- !u!61 &4308783850598229064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -435,14 +435,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5431e00a4b662e241a384b6f1bd548d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  source: {fileID: 0}
   damage: 1
   maxhp: 3
-  _speed: 2
-  basespeed: 2
-  maxspeed: 4
-  _leftBound: 2
-  _rightBound: 5
+  _speed: 1
+  basespeed: 1
+  maxspeed: 2.5
+  _leftBound: -2.99
+  _rightBound: -0.83
   scalex: 3.26581
   scaley: -3.26581
   playerIsClose: 0
   danger: {fileID: 4579197563202068167}
+  waitforsecond: 0.3

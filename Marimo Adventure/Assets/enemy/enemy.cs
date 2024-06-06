@@ -1,10 +1,11 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class enemy : MonoBehaviour
 {
+    public AudioSource source;
     private Transform target;
     [SerializeField] private float damage;
     [SerializeField] private float maxhp;
@@ -18,9 +19,13 @@ public class enemy : MonoBehaviour
     private bool _isMovingLeft = true;
     private bool _isMoving = true;
     public bool playerIsClose;
+    private Animator _animator;
     [SerializeField] public GameObject danger;
+    [SerializeField] public float waitforsecond;
     void Start()
     {
+        
+        _animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
@@ -71,7 +76,8 @@ public class enemy : MonoBehaviour
             maxhp -= damage;
             if (maxhp <= 0)
             {
-                Destroy(gameObject);
+                source.Play();
+                StartCoroutine(wait());
             }
         }
     }
@@ -81,5 +87,14 @@ public class enemy : MonoBehaviour
         {
             playerIsClose = false;
         }
+    }
+    IEnumerator wait()
+    {
+        _animator.SetBool("dead", true);
+        // Chờ cho hoạt hình kết thúc và thêm thời gian chờ nếu cần
+        yield return new WaitForSeconds(waitforsecond);
+
+        // Tiêu diệt đối tượng
+        Destroy(gameObject);
     }
 }
