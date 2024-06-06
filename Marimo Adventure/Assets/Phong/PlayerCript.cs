@@ -103,22 +103,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         heath -= damage;
+        PlayerAudio.instance.PlaySFX("Die");
         if (heath < 1)
         {
             Die();
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    /*void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Spike") || other.gameObject.CompareTag("Enemy"))
         {
             Die();
         }
-    }
+    }*/
 
     void Die()
     {
