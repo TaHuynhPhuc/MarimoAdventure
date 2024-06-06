@@ -86,11 +86,7 @@ public class enemy : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
-        }
-
-        if (other.gameObject.GetComponent<PlayerController>() != null)
-            other.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
-            
+        }   
     }
     IEnumerator wait()
     {
