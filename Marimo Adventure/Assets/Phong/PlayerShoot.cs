@@ -10,10 +10,14 @@ public class PlayerShoot : MonoBehaviour
     public Animator anim;
     public float cooldownTime = 1f;
     private float nextFireTime = 0f;
+    private PlayerAudio playerAudio;
+    private Animator animator;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        playerAudio = GetComponent<PlayerAudio>();
+        animator = GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
@@ -32,13 +36,14 @@ public class PlayerShoot : MonoBehaviour
             facingRight = true;
         }
         UpdateFirePointDirection();
+        
     }
     void Shoot()
     {
         // Tạo mũi tên tại vị trí và hướng của firePoint
         anim.SetTrigger("attack");
         Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);
-        
+        PlayerAudio.instance.PlaySFX("Shoot");
     }
     void UpdateFirePointDirection()
     {
