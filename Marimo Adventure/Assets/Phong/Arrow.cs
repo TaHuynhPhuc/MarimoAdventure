@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireAmmo : MonoBehaviour
+public class Arrow : MonoBehaviour
 {
     public float speed = 10f; // Tốc độ của mũi tên
     private Rigidbody2D rb;
-    
+    public int damage = 1;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -23,10 +23,13 @@ public class FireAmmo : MonoBehaviour
         }
 
         // Nếu mũi tên chạm kẻ thù
-        if (collision.gameObject.CompareTag("Enemy"))
+        // Kiểm tra nếu đối tượng va chạm có component Enemy
+        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        if (enemy != null)
         {
-            Destroy(collision.gameObject); // Tiêu diệt kẻ thù
-            Destroy(gameObject); // Tiêu diệt mũi tên
+            // Gọi phương thức TakeDamage nếu enemy không phải là null
+            enemy.TakeDamage(damage);
+            Destroy(gameObject);
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class enemy : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public AudioSource source;
     private Transform target;
@@ -28,6 +28,7 @@ public class enemy : MonoBehaviour
         _animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
+
 
     // Update is called once per frame
     void Update()
@@ -95,6 +96,20 @@ public class enemy : MonoBehaviour
         yield return new WaitForSeconds(waitforsecond);
 
         // Tiêu diệt đối tượng
+        Destroy(gameObject);
+    }
+    public void TakeDamage(int damage)
+    {
+        maxhp -= damage;
+        if (maxhp <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        // Logic để kẻ địch chết
         Destroy(gameObject);
     }
 }

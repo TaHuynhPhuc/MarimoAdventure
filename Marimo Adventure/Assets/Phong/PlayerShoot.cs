@@ -12,6 +12,7 @@ public class PlayerShoot : MonoBehaviour
     private float nextFireTime = 0f;
     private PlayerAudio playerAudio;
     private Animator animator;
+    public int arrowDamage = 1; // Thêm biến damage cho mũi tên
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class PlayerShoot : MonoBehaviour
         playerAudio = GetComponent<PlayerAudio>();
         animator = GetComponent<Animator>();
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -36,15 +38,18 @@ public class PlayerShoot : MonoBehaviour
             facingRight = true;
         }
         UpdateFirePointDirection();
-        
+
     }
+
     void Shoot()
     {
         // Tạo mũi tên tại vị trí và hướng của firePoint
         anim.SetTrigger("attack");
-        Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);
+        GameObject arrow = Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);
+        arrow.GetComponent<Arrow>().damage = arrowDamage; // Truyền damage cho mũi tên
         PlayerAudio.instance.PlaySFX("Shoot");
     }
+
     void UpdateFirePointDirection()
     {
         // Xoay firePoint theo hướng của người chơi
