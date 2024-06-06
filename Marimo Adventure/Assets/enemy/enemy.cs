@@ -82,4 +82,5 @@ public class enemy : MonoBehaviour
             playerIsClose = false;
         }
     }
+
 }

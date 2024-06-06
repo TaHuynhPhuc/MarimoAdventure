@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - Ladder
   - Arrow
+  - Spike
+  - bodyenemy
   layers:
   - Default
   - TransparentFX
