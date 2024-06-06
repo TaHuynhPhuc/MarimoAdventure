@@ -87,12 +87,15 @@ public class enemy : MonoBehaviour
         {
             playerIsClose = false;
         }
+
+        if (other.gameObject.GetComponent<PlayerController>() != null)
+            other.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
     }
-    private void OnTriggerEnter2D(Collider collison)
-    {
-        if(collison.gameObject.GetComponent<PlayerController>() != null)
-        collison.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
-    }
+    //private void OnTriggerEnter2D(Collider collison)
+    //{
+    //    if(collison.gameObject.GetComponent<PlayerController>() != null)
+    //    collison.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+    //}
     IEnumerator wait()
     {
         _animator.SetBool("dead", true);
