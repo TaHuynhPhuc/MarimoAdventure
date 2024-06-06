@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
 {
     public AudioSource source;
     private Transform target;
-    [SerializeField] private float damage;
+    [SerializeField] private int damage;
     [SerializeField] private float maxhp;
     [SerializeField] private float _speed = 2f;
     [SerializeField] private float basespeed;
@@ -87,7 +87,7 @@ public class Enemy : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
-        }
+        }   
     }
     IEnumerator wait()
     {
