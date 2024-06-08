@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
     bool isAlive = true;
     public ParticleSystem dust;
     public int heath = 3;
-    int damage = 1;
     private PlayerAudio playerAudio;
 
     void Start()

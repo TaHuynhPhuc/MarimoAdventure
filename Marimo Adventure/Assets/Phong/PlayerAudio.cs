@@ -49,7 +49,7 @@ public class PlayerAudio : MonoBehaviour
 
         if (s == null)
         {
-            Debug.Log("Sound Not found");
+            //Debug.Log("Sound Not found");
         }
         else
         {

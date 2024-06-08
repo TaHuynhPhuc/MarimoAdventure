@@ -31,5 +31,12 @@ public class Arrow : MonoBehaviour
             enemy.TakeDamage(damage);
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Boss"))
+        {
+            if(collision.gameObject.GetComponent<Boss>() != null)
+            collision.gameObject.GetComponent<Boss>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
     }
 }
